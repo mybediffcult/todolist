@@ -1,0 +1,160 @@
+body{
+    margin:0;/*外边框 上右下左都为0*/
+	padding:0;/*内边框*/
+	font-size:16px;/*字体大小*/
+	background:#CDCDCD;/*背景颜色*/
+    }
+header{
+	height: 70px;/*高*/
+	background: rgba(47,47,47,0.98);/*rgba 背景颜色 前三个数字是颜色 后一个是透明度*/
+	background: #333;/*背景颜色 以防万一*/
+    }
+section{
+	margin:0 auto;/*上下为0  左右auto*/
+    }
+label{
+	float: left;/*左右浮框 左浮框 与后面的右浮框相对应*/
+	width: 100px;/*宽*/
+	line-height: 70px;/*内部行高*/
+	font-size: 30px;/*字体大小*/
+	color: #DDD;
+	cursor: pointer; /*鼠标形式变化*/
+	font-family: "Hello World",Helvetica,Arial,sans-serif;/*字体选择 多个表示依次优先使用 前面的不能用用后面的 */
+    }
+header input{      /*在header 里面的input*/
+	float: right;/*左右浮框 右浮框 与前面的左浮框相对应*/
+
+	width: 50%;/*宽度 百分比表示*/
+	line-height: 30px;
+	margin-top: 18px;
+	text-indent: 10px;/*首行文本的缩进*/
+	border-radius: 10px;/*圆角边框*/
+	box-shadow: 0 1px 0 rgba(255,255,255,0.9),0 1px 6px rgba(0,0,0,0.45) inset;/*影子 向右 向下 虚度 颜色 inset、outset为两种显示方式*/
+	border: none;/*无边框*/
+	outline: none;/*无轮廓 与border有区别详细见http://blog.csdn.net/sadfishsc/article/details/7037736*/
+    }
+input:focus{outline-width: 0}
+h2{
+	position:relative;/*相对位置*/
+  }
+  span{
+  	position:relative;/*相对位置*/
+  	top:2px;/*上*/
+  	right:5px;/*右*/
+  	left: 550px;/*左*/
+  	display:inline-block;/*行级块级元素*/
+  	padding:0 10px;
+  	height:20px;/*高*/
+  	border-radius:20px;
+  	background:#E6E6FA;
+  	line-height:22px;/*行高 与height相等时可居中显示*/
+  	text-align:center;/*文档居中*/
+  	color:#666;
+  	font-size:17px;/*字体大小为17px 默认为16px*/
+  }
+  button{
+  	position: relative;
+  	vertical-align: bottom;
+  	padding: 5px 10px;
+  	left: 400px;
+
+  }
+li{
+	height: 40px;
+	width: 700px;
+	line-height: 0px;
+	outline-style:outset;
+	outline-width:2px;/*轮廓宽度*/
+	outline-color:rgba(153,153,153,0.17);
+	list-style-position: inside;/*何处放置列表标记*/
+	background: rgba(153,153,153,0.84);
+	position: relative;
+	margin-top: 11px;
+	border-radius: 30px;
+	text-indent: 15px;
+	border-left: 10px solid #b0c4de;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px  3px #999;
+}
+li>input{
+	position: absolute;
+	top: 4px;
+	vertical-align:middle;
+  	height: 28px;
+	width: 28px; 
+}
+p{margin: 0;}
+p input{
+	width:70%;
+	height:20px;
+	line-height:14px;
+	text-indent:5px;
+	font-size:14px;
+}
+li p{
+	margin-left: 50px;
+	height: 40px;
+	line-height: 40px;
+	width: 60%;
+	vertical-align:middle; 
+	text-align: left;
+}
+li button{
+  	position: relative;
+  	vertical-align: bottom;
+  	padding: 5px 10px;
+  	left: 550px;
+  	top: 5px;
+
+  }
+
+ol,ul{
+	padding:0;
+	list-style:none;
+	cursor: pointer;
+}
+ol li{
+	cursor: move;
+}
+
+ .dcircle{
+	position:absolute;/*绝对定位*/
+	top:8px;
+	right:10px;
+	display:inline-block;
+	width:14px;
+	height:14px;
+	border-radius:12px;
+	/*border:solid red 1px;*/
+	border:6px double #FFF;/*两个border*/
+	font-size:14px;
+	/*background:#CCC;*/
+	line-height:14px;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	text-indent: 0;
+	cursor:pointer;
+	text-decoration: none;/*去掉自带下划线*/
+}
+
+footer{
+	color:#666;
+	font-size:14px;
+	text-align: center;
+}
+footer a{
+	position: fixed;
+	height: 50px;
+	width: 150px;
+	bottom: 0;
+	border-radius: 10px;
+	right: 0;
+	color: #7F4E63;
+	line-height: 50px;
+	background-color: #999;
+	text-decoration: none;
+	font-size: 30px;
+}
+@media screen and (max-device-width:620px) {section{width: 96%;padding:0 2%;}}/*屏幕自适应 使页面能够在不同大小的屏幕上正常显示*/
+@media screen and (min-width:620px) {section{width: 620px;padding: 0 100px;}}
